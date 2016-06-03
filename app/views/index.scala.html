@@ -1,10 +1,9 @@
-@(message: String, producerUrl: String, consumerUrl: String)
+@(message: String, serverUrl: String)
 
 @main("HyperQueue!") {
     @*Lets just keep the urls in hidden inputs DUH! *@
     @*TODO: Do it normally, for the love of god*@
-    <input type="hidden" id="socketUrl" value="@producerUrl">
-    <input type="hidden" id="socketUrl" value="@consumerUrl">
+    <input type="hidden" id="server-url" value="@serverUrl">
 
     <h1>Welcome</h1>
     <div class = "consumer-form">
@@ -23,5 +22,6 @@
             <button type="button" id = "produce-button">Submit</button>
         </div>
     </div>
+     <!--It supposed to be a list but no time no time-->
     <div class = "feedback">Here goes feedback...</div>
 }
