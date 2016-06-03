@@ -11,7 +11,8 @@ libraryDependencies ++= Seq(
   cache,
   ws,
   specs2 % Test,
-  "org.webjars" % "jquery" % "2.1.4"
+  "org.webjars" % "jquery" % "2.1.4",
+  filters
 )
 
 resolvers += "scalaz-bintray" at "http://dl.bintray.com/scalaz/releases"
